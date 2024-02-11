@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<playground version="6.0" target-platform="ios" requires-full-environment="false">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
     <pages>
-        <page name="Ejercicio21"/>
-        <page name="Ejercicio3"/>
-        <page name="Ejercicio4"/>
-        <page name="Ejercicio5"/>
-        <page name="Ejercicio6"/>
-        <page name="Ejercicio7"/>
-        <page name="Ejercicio8"/>
-        <page name="Ejercicio9"/>
-        <page name="Ejercicio10"/>
-        <page name="Ejercicio11"/>
-        <page name="Ejercicio12"/>
-        <page name="Ejercicio13"/>
-        <page name="Ejercicio14"/>
-        <page name="Ejercicio15"/>
-        <page name="Ejercicio16"/>
-        <page name="Ejercicio17"/>
-        <page name="Ejercicio18"/>
-        <page name="Ejercicio19"/>
-        <page name="Ejercicio20"/>
-        <page name="Ejercicio22"/>
+        <page name='Ejercicio21'/>
+        <page name='Ejercicio22'/>
+        <page name='Ejercicio23'/>
+        <page name='Ejercicio24'/>
+        <page name='Ejercicio25'/>
+        <page name='Ejercicio26'/>
+        <page name='Ejercicio27'/>
+        <page name='Ejercicio28'/>
+        <page name='Ejercicio29'/>
+        <page name='Ejercicio30'/>
+        <page name='Ejercicio31'/>
+        <page name='Ejercicio32'/>
+        <page name='Ejercicio33'/>
+        <page name='Ejercicio34'/>
+        <page name='Ejercicio35'/>
+        <page name='Ejercicio36'/>
+        <page name='Ejercicio37'/>
+        <page name='Ejercicio38'/>
+        <page name='Ejercicio39'/>
+        <page name='Ejercicio40'/>
     </pages>
 </playground>

@@ -1,12 +1,18 @@
 import Foundation
 
-// ## Cálculo del área de un triángulo, dado su base y su altura
+//: ## Número de días del mes
 
-let base = Double.random(in: 0...100)
+let mes = "julio"
 
-let altura = Double.random(in: 0...100)
-
-let area = base * altura / 2
-print("El área de un triángulo de base \(base) y altura \(altura) es \(area)")
+switch mes {
+	case "febrero":
+		print("\(mes) tiene 28 días")
+	case "enero", "marzo", "mayo", "julio", "agosto", "octubre", "diciembre":
+		print("\(mes) tiene 31 días")
+	case "abril", "junio", "septiembre", "noviembre":
+		print("\(mes) tiene 30 días")
+	default:
+		print("\(mes) no se corresponde con ningún mes")
+}
 
 print("Fin")
