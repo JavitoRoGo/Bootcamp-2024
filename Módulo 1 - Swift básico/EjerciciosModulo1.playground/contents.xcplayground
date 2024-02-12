@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Ejercicio1'/>
+        <page name='Ejercicio2'/>
+        <page name='Ejercicio3'/>
+        <page name='Ejercicio4'/>
+        <page name='Ejercicio5'/>
+        <page name='Ejercicio6'/>
+        <page name='Ejercicio7'/>
+        <page name='Ejercicio8'/>
+        <page name='Ejercicio9'/>
+        <page name='Ejercicio10'/>
+        <page name='Ejercicio11'/>
+        <page name='Ejercicio12'/>
+        <page name='Ejercicio13'/>
+        <page name='Ejercicio14'/>
+        <page name='Ejercicio15'/>
+        <page name='Ejercicio16'/>
+        <page name='Ejercicio17'/>
+        <page name='Ejercicio18'/>
+        <page name='Ejercicio19'/>
+        <page name='Ejercicio20'/>
+        <page name='Ejercicio21'/>
+        <page name='Ejercicio22'/>
+        <page name='Ejercicio23'/>
+        <page name='Ejercicio24'/>
+        <page name='Ejercicio25'/>
+        <page name='Ejercicio26'/>
+    </pages>
+</playground>
