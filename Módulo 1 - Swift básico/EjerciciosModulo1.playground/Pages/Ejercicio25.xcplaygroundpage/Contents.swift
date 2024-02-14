@@ -15,18 +15,17 @@ if num <= 3 {
 } else {
 	var i = 5
 	
-	var repeating = true
 	repeat {
 		if i * i <= num {
 			if num % i == 0 || num % (i + 2) == 0 {
 				print("\(num) no es un número primo")
-				repeating = false
+				break
 			} else {
 				i += 6
 			}
 		} else {
 			print("\(num) es un número primo")
-			repeating = false
+			break
 		}
-	} while repeating
+	} while true
 }

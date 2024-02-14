@@ -11,11 +11,8 @@ task["Ordenar la mesa"] = 3
 task["Estudiar Swift"] = 5
 task["Salir a correr"] = 3
 
-//: Crear un array con las tareas
-let tasks = Array(task)
-
 //: Ordenar por prioridad
-let sortByValue = tasks.sorted(by: { $0.value > $1.value })
+let sortByValue = Array(task.values.sorted())
 
 //: Ordenar por orden alfabético
-let sortByKey = tasks.sorted(by: { $0.key < $1.key })
+let sortByKey = Array(task.keys.sorted())
