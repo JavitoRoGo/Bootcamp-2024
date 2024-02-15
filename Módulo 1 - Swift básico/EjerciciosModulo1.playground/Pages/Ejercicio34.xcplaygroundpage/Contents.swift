@@ -4,6 +4,8 @@ import Foundation
 //: Calcula el índice de masa corporal (IMC) y clasifícalo según la tabla adjunta a partir de su resultado dando un resultado como cadena para cada rango.
 //: IMC = P(kg) / A(m)^2
 
+//: Uso de sentencia `switch` para comparar entre varias posibilidades.
+
 let pesoEnKg = 56.5
 let alturaEnMetros = 1.7
 
