@@ -25,5 +25,5 @@ for number in conjunto {
 let max = repeticiones.values.max() ?? 0
 
 if let index = repeticiones.values.firstIndex(of: max) {
-	print("El valor más frecuente es el número \(repeticiones.keys[index])")
+	print("El valor más frecuente es el número \(repeticiones.keys[index]), que se repite \(max) veces")
 }

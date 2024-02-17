@@ -11,9 +11,9 @@ let punto2 = (-1,9)
 let (x1,y1) = punto1
 let (x2,y2) = punto2
 
-let sqX = Double(x2 - x1)
-let sqY = Double(y2 - y1)
+let deltaX = Double(x2 - x1)
+let deltaY = Double(y2 - y1)
 
-let distance = sqrt(sqX*sqX + sqY*sqY)
+let distance = sqrt(deltaX*deltaX + deltaY*deltaY)
 
 print("La distancia entre los puntos \(punto1) y \(punto2) es \(distance)")
