@@ -205,9 +205,9 @@
         "descripcion": "Lucía, una bióloga marina, descubrió una cueva submarina secreta donde encontró un tridente místico. Al tocarlo, se transformó en la protectora de los océanos con la capacidad de comunicarse con la vida marina y controlar el agua.",
         "edad": 26,
         "poderes": [
-            "Manipulación del agua",
-            "Comunicación con vida marina",
-            "Transformación en forma acuática"
+            "Manipulación del Agua",
+            "Comunicación con Vida Marina",
+            "Transformación en Forma Acuática"
         ],
         "imagen": "sirena"
     },
@@ -218,8 +218,8 @@
         "descripcion": "Tomás era un astrónomo que, durante un raro eclipse, fue transportado a otra dimensión. Al regresar, trajo consigo el poder de manipular las sombras y moverse a través de ellas.",
         "edad": 31,
         "poderes": [
-            "Manipulación de sombras",
-            "Teletransportación a través de sombras"
+            "Manipulación de Sombras",
+            "Teletransportación a través de Sombras"
         ],
         "imagen": "eclipse"
     },
@@ -231,7 +231,7 @@
         "edad": 29,
         "poderes": [
             "Regeneración",
-            "Manipulación del fuego",
+            "Manipulación del Fuego",
             "Vuelo"
         ],
         "imagen": "fenix"

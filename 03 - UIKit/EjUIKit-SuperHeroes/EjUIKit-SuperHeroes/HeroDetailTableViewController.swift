@@ -22,12 +22,10 @@ class HeroDetailTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		if let selectedHero {
-			imagen.image = UIImage(named: selectedHero.imagen)
-			edad.text = "\(selectedHero.edad)"
-		}
+		imagen.image = UIImage(named: selectedHero?.imagen ?? "")
 		apodo.text = selectedHero?.apodo
 		nombre.text = selectedHero?.nombreReal
+		edad.text = "\(selectedHero?.edad ?? 0)"
 		poderes.text = selectedHero?.poderes.map { $0.rawValue }.formatted(.list(type: .and).locale(Locale(identifier: "es")))
 		descripcion.text = selectedHero?.descripcion
 		
