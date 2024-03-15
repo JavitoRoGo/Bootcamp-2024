@@ -19,6 +19,6 @@ struct SuperHeroInteractor: DataInteractor {
 	func loadData() throws -> [SuperHero] {
 		guard let url = Bundle.main.url(forResource: "SuperHeroes", withExtension: "json") else { return [] }
 		let data = try Data(contentsOf: url)
-		return try JSONDecoder().decode([SuperHero].self, from: data)
+		return try JSONDecoder().decode([SuperHeroDTO].self, from: data).map(\.toSuperHero)
 	}
 }

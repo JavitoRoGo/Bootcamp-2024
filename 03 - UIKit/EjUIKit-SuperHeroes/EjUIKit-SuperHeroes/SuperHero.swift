@@ -7,34 +7,37 @@
 
 import Foundation
 
-struct SuperHero: Codable {
-	let id: UUID
+struct SuperHeroDTO: Codable {
+	let id: String
 	let nombreReal: String
 	let apodo: String
-	let descripcion: String
+	let descripcion: String?
 	let edad: Int
-	let poderes: [Poderes]
+	let poderes: [String]
 	let imagen: String
+	let historia: String?
 	
-	init(from decoder: Decoder) throws {
-		let container = try decoder.container(keyedBy: CodingKeys.self)
-		let stringid = try container.decode(String.self, forKey: .id)
-		if let uuid = UUID(uuidString: stringid) {
-			self.id = uuid
-		} else {
-			self.id = UUID()
+	var toSuperHero: SuperHero {
+		var uuid = UUID()
+		if let newUuid = UUID(uuidString: id) { uuid = newUuid }
+		let poderesEnum = poderes.map { Poderes(rawValue: $0) ?? .desconocido }
+		var historiaDTO = ""
+		if let descripcion {
+			historiaDTO = descripcion
+		} else if let historia {
+			historiaDTO = historia
 		}
-		self.nombreReal = try container.decode(String.self, forKey: .nombreReal)
-		self.apodo = try container.decode(String.self, forKey: .apodo)
-		do {
-			self.descripcion = try container.decode(String.self, forKey: .descripcion)
-		} catch {
-			self.descripcion = "Sin descripción disponible"
-		}
-		self.edad = try container.decode(Int.self, forKey: .edad)
-		let array = try container.decode([String].self, forKey: .poderes)
-		self.poderes = array.map { Poderes(rawValue: $0) ?? .desconocido }
-		self.imagen = try container.decode(String.self, forKey: .imagen)
+		
+		return SuperHero(id: uuid, nombre: nombreReal, apodo: apodo, edad: edad, poderes: poderesEnum, imagen: imagen, historia: historiaDTO)
 	}
 }
 
+struct SuperHero: Codable {
+	let id: UUID
+	let nombre: String
+	let apodo: String
+	let edad: Int
+	let poderes: [Poderes]
+	let imagen: String
+	let historia: String
+}

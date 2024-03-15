@@ -24,10 +24,10 @@ class HeroDetailTableViewController: UITableViewController {
 		
 		imagen.image = UIImage(named: selectedHero?.imagen ?? "")
 		apodo.text = selectedHero?.apodo
-		nombre.text = selectedHero?.nombreReal
+		nombre.text = selectedHero?.nombre
 		edad.text = "\(selectedHero?.edad ?? 0)"
 		poderes.text = selectedHero?.poderes.map { $0.rawValue }.formatted(.list(type: .and).locale(Locale(identifier: "es")))
-		descripcion.text = selectedHero?.descripcion
+		descripcion.text = selectedHero?.historia
 		
 		imagen.layer.cornerRadius = 15
 	}
