@@ -32,7 +32,7 @@ struct SuperHeroDTO: Codable {
 	}
 }
 
-struct SuperHero: Codable {
+struct SuperHero: Codable, Hashable {
 	let id: UUID
 	let nombre: String
 	let apodo: String

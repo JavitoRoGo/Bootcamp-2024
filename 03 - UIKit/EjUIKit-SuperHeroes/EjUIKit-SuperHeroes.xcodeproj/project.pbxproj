@@ -19,6 +19,7 @@
 		44C229802B9F4AF100077318 /* SuperHeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2297F2B9F4AF100077318 /* SuperHeroesTableViewController.swift */; };
 		44C2298B2B9FC11100077318 /* HeroDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2298A2B9FC11100077318 /* HeroDetailTableViewController.swift */; };
 		44F46DB02BA51055006ABBAB /* SuperHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 44F46DAF2BA51055006ABBAB /* SuperHeroes.json */; };
+		44F46DB22BA5195F006ABBAB /* DiffableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F46DB12BA5195F006ABBAB /* DiffableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		44C2297F2B9F4AF100077318 /* SuperHeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesTableViewController.swift; sourceTree = "<group>"; };
 		44C2298A2B9FC11100077318 /* HeroDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailTableViewController.swift; sourceTree = "<group>"; };
 		44F46DAF2BA51055006ABBAB /* SuperHeroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SuperHeroes.json; path = "../../../../../../Downloads/Super Héroes/SuperHeroes.json"; sourceTree = "<group>"; };
+		44F46DB12BA5195F006ABBAB /* DiffableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				44C2297F2B9F4AF100077318 /* SuperHeroesTableViewController.swift */,
 				44C2298A2B9FC11100077318 /* HeroDetailTableViewController.swift */,
+				44F46DB12BA5195F006ABBAB /* DiffableTableViewController.swift */,
 				44C2297C2B9F3EB100077318 /* Logic */,
 				44C229792B9F3D5600077318 /* Interactor */,
 				44C229762B9F3B3300077318 /* Model */,
@@ -191,6 +194,7 @@
 			files = (
 				44C2297B2B9F3D6F00077318 /* SuperHeroInteractor.swift in Sources */,
 				44C229782B9F3B4A00077318 /* SuperHero.swift in Sources */,
+				44F46DB22BA5195F006ABBAB /* DiffableTableViewController.swift in Sources */,
 				44C2295E2B9F3A1700077318 /* AppDelegate.swift in Sources */,
 				44C2297E2B9F3EC300077318 /* SuperHeroLogic.swift in Sources */,
 				44C229752B9F3ACB00077318 /* Poderes.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f4h-77-M27">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gkt-iL-DrZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -46,7 +46,48 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1o-u8-NVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.37404580152668" y="-11.267605633802818"/>
+            <point key="canvasLocation" x="1848.0916030534349" y="-11.267605633802818"/>
+        </scene>
+        <!--Super Diffable-->
+        <scene sceneID="Zjr-fn-gP0">
+            <objects>
+                <tableViewController id="iA0-TY-eiU" customClass="DiffableTableViewController" customModule="EjUIKit_SuperHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Nzk-ca-Y5b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="zelda" textLabel="Z0V-no-vEx" style="IBUITableViewCellStyleDefault" id="ed2-fF-fL8">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ed2-fF-fL8" id="yQP-C5-H9I">
+                                    <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z0V-no-vEx">
+                                            <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="E9h-sC-Be9" kind="show" destinationCreationSelector="viewDetail:" id="imb-pE-LzB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iA0-TY-eiU" id="Ibd-Px-o82"/>
+                            <outlet property="delegate" destination="iA0-TY-eiU" id="gTg-3H-5pC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Super Diffable" id="Fgb-lU-FJh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pU6-CE-0z2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="733"/>
         </scene>
         <!--Información-->
         <scene sceneID="kZF-Bj-NnA">
@@ -217,12 +258,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pot-73-oIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817.5572519083969" y="-11.267605633802818"/>
+            <point key="canvasLocation" x="2744.2748091603053" y="-11.267605633802818"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Delegados-->
         <scene sceneID="ulR-0F-1gI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f4h-77-M27" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Delegados" image="tortoise" catalog="system" id="1NU-2f-GMy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WAm-IW-iJb">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -235,10 +277,53 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GI-Vp-pa8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="921.37404580152668" y="-11.267605633802818"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2m2-HM-tPB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gkt-iL-DrZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I1s-SV-VLb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f4h-77-M27" kind="relationship" relationship="viewControllers" id="6c8-Ri-mQ9"/>
+                        <segue destination="Whf-hO-oTQ" kind="relationship" relationship="viewControllers" id="I0u-pk-t0x"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bR-Cb-Dif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-5.343511450381679" y="-11.267605633802818"/>
         </scene>
+        <!--Diffable-->
+        <scene sceneID="bWt-XA-N11">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Whf-hO-oTQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Diffable" image="hare" catalog="system" id="ghI-z6-xIX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="2y6-Wl-j7y">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iA0-TY-eiU" kind="relationship" relationship="rootViewController" id="2Au-RP-Ipv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXF-d3-WCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="733"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="imb-pE-LzB"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="hare" catalog="system" width="128" height="89"/>
+        <image name="tortoise" catalog="system" width="128" height="65"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
