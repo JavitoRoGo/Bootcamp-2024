@@ -18,7 +18,7 @@
 		44C2297E2B9F3EC300077318 /* SuperHeroLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2297D2B9F3EC300077318 /* SuperHeroLogic.swift */; };
 		44C229802B9F4AF100077318 /* SuperHeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2297F2B9F4AF100077318 /* SuperHeroesTableViewController.swift */; };
 		44C2298B2B9FC11100077318 /* HeroDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2298A2B9FC11100077318 /* HeroDetailTableViewController.swift */; };
-		44F46DB02BA51055006ABBAB /* SuperHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 44F46DAF2BA51055006ABBAB /* SuperHeroes.json */; };
+		44DFCC8F2BB0B80900AB3708 /* SuperHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DFCC8E2BB0B80900AB3708 /* SuperHeroes.json */; };
 		44F46DB22BA5195F006ABBAB /* DiffableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F46DB12BA5195F006ABBAB /* DiffableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		44C2297D2B9F3EC300077318 /* SuperHeroLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroLogic.swift; sourceTree = "<group>"; };
 		44C2297F2B9F4AF100077318 /* SuperHeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesTableViewController.swift; sourceTree = "<group>"; };
 		44C2298A2B9FC11100077318 /* HeroDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailTableViewController.swift; sourceTree = "<group>"; };
-		44F46DAF2BA51055006ABBAB /* SuperHeroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SuperHeroes.json; path = "../../../../../../Downloads/Super Héroes/SuperHeroes.json"; sourceTree = "<group>"; };
+		44DFCC8E2BB0B80900AB3708 /* SuperHeroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuperHeroes.json; sourceTree = "<group>"; };
 		44F46DB12BA5195F006ABBAB /* DiffableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +77,8 @@
 				44C229792B9F3D5600077318 /* Interactor */,
 				44C229762B9F3B3300077318 /* Model */,
 				44C229632B9F3A1700077318 /* Main.storyboard */,
+				44DFCC8E2BB0B80900AB3708 /* SuperHeroes.json */,
 				44C229662B9F3A1900077318 /* Assets.xcassets */,
-				44F46DAF2BA51055006ABBAB /* SuperHeroes.json */,
 				44C229712B9F3A3F00077318 /* System */,
 			);
 			path = "EjUIKit-SuperHeroes";
@@ -179,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C229672B9F3A1900077318 /* Assets.xcassets in Resources */,
-				44F46DB02BA51055006ABBAB /* SuperHeroes.json in Resources */,
+				44DFCC8F2BB0B80900AB3708 /* SuperHeroes.json in Resources */,
 				44C2296A2B9F3A1900077318 /* Base in Resources */,
 				44C229652B9F3A1700077318 /* Base in Resources */,
 			);
