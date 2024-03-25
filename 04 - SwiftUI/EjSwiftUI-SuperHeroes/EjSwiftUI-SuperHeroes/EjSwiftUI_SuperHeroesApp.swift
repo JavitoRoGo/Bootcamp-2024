@@ -11,7 +11,7 @@ import SwiftUI
 struct EjSwiftUI_SuperHeroesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

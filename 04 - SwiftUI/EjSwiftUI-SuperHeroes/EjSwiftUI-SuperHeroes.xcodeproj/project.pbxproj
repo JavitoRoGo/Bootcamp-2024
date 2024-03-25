@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44CCCDC42BB1A70A002412F9 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCCDC32BB1A70A002412F9 /* GridView.swift */; };
+		44CCCDC62BB1A995002412F9 /* HeroAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCCDC52BB1A995002412F9 /* HeroAvatar.swift */; };
+		44CCCDC82BB1A9C7002412F9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCCDC72BB1A9C7002412F9 /* MainView.swift */; };
 		44DFCC812BB0B36700AB3708 /* EjSwiftUI_SuperHeroesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DFCC802BB0B36700AB3708 /* EjSwiftUI_SuperHeroesApp.swift */; };
-		44DFCC832BB0B36700AB3708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DFCC822BB0B36700AB3708 /* ContentView.swift */; };
+		44DFCC832BB0B36700AB3708 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DFCC822BB0B36700AB3708 /* ListView.swift */; };
 		44DFCC852BB0B36A00AB3708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DFCC842BB0B36A00AB3708 /* Assets.xcassets */; };
 		44DFCC882BB0B36A00AB3708 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DFCC872BB0B36A00AB3708 /* Preview Assets.xcassets */; };
 		44DFCC912BB0BA8B00AB3708 /* SuperHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DFCC902BB0BA8B00AB3708 /* SuperHeroes.json */; };
@@ -18,9 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44CCCDC32BB1A70A002412F9 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		44CCCDC52BB1A995002412F9 /* HeroAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAvatar.swift; sourceTree = "<group>"; };
+		44CCCDC72BB1A9C7002412F9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		44DFCC7D2BB0B36700AB3708 /* EjSwiftUI-SuperHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EjSwiftUI-SuperHeroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DFCC802BB0B36700AB3708 /* EjSwiftUI_SuperHeroesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjSwiftUI_SuperHeroesApp.swift; sourceTree = "<group>"; };
-		44DFCC822BB0B36700AB3708 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44DFCC822BB0B36700AB3708 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		44DFCC842BB0B36A00AB3708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44DFCC872BB0B36A00AB3708 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44DFCC902BB0BA8B00AB3708 /* SuperHeroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuperHeroes.json; sourceTree = "<group>"; };
@@ -60,8 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				44DFCC802BB0B36700AB3708 /* EjSwiftUI_SuperHeroesApp.swift */,
-				44DFCC822BB0B36700AB3708 /* ContentView.swift */,
+				44CCCDC72BB1A9C7002412F9 /* MainView.swift */,
+				44DFCC822BB0B36700AB3708 /* ListView.swift */,
+				44CCCDC32BB1A70A002412F9 /* GridView.swift */,
 				44DFCC972BB0E4BB00AB3708 /* DetailView.swift */,
+				44CCCDC52BB1A995002412F9 /* HeroAvatar.swift */,
 				44DFCC922BB0BB8900AB3708 /* Model */,
 				44DFCC842BB0B36A00AB3708 /* Assets.xcassets */,
 				44DFCC902BB0BA8B00AB3708 /* SuperHeroes.json */,
@@ -158,10 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DFCC832BB0B36700AB3708 /* ContentView.swift in Sources */,
+				44DFCC832BB0B36700AB3708 /* ListView.swift in Sources */,
+				44CCCDC82BB1A9C7002412F9 /* MainView.swift in Sources */,
 				44DFCC812BB0B36700AB3708 /* EjSwiftUI_SuperHeroesApp.swift in Sources */,
 				44DFCC962BB0BBBF00AB3708 /* Poderes.swift in Sources */,
+				44CCCDC62BB1A995002412F9 /* HeroAvatar.swift in Sources */,
 				44DFCC982BB0E4BB00AB3708 /* DetailView.swift in Sources */,
+				44CCCDC42BB1A70A002412F9 /* GridView.swift in Sources */,
 				44DFCC942BB0BB9E00AB3708 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

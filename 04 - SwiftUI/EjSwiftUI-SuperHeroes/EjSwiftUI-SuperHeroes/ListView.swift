@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ListView.swift
 //  EjSwiftUI-SuperHeroes
 //
 //  Created by Javier Rodríguez Gómez on 24/3/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListView: View {
 	let heroes = getHeros()
 	
     var body: some View {
@@ -15,12 +15,7 @@ struct ContentView: View {
 			List(heroes) { hero in
 				NavigationLink(value: hero) {
 					HStack(spacing: 20.0) {
-						Image(hero.imagen)
-							.resizable()
-							.scaledToFit()
-							.frame(width: 80, height: 80)
-							.clipShape(.circle)
-							.shadow(radius: 5)
+						HeroAvatar(hero: hero)
 						Text(hero.apodo)
 							.font(.headline)
 					}
@@ -35,5 +30,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ListView()
 }

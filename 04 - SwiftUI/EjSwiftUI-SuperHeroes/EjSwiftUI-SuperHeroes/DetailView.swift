@@ -21,7 +21,6 @@ struct DetailView: View {
 				Text(hero.apodo)
 					.font(.largeTitle)
 			}
-			.frame(maxWidth: .infinity)
 			
 			HStack {
 				VStack(alignment: .leading) {
@@ -49,7 +48,7 @@ struct DetailView: View {
 				Text(hero.historia)
 			}
 		}
-		.navigationTitle(hero.apodo)
+		.navigationTitle("Información")
 		.navigationBarTitleDisplayMode(.inline)
     }
 }
